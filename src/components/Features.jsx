@@ -67,7 +67,7 @@ const ModelScroll = () => {
             .to('.box1', {
                 opacity: 1,
                 y: 0,
-                dealy:1
+                delay:1
             })
             .call(() => setTexture('/videos/feature-2.mp4'))
             .to('.box2', {
@@ -111,7 +111,7 @@ const Features = () => {
 
             <div className='absolute inset-0'>
                 {features.map((feature, index) => (
-                    <div className={clsx('box', `box${index+1}`, feature.styles)}>
+                    <div key={index} className={clsx('box', `box${index+1}`, feature.styles)}>
                         <img src={feature.icon} alt={feature.highlight}/>
                         <p>
                             <span className='text-white'>{feature.highlight}</span>
