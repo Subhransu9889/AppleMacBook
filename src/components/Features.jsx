@@ -10,14 +10,14 @@ import useMacBookStore from "../store/index.js";
 import {useGSAP} from "@gsap/react";
 import gsap from "gsap";
 
-const ModelScrool = () => {
+const ModelScroll = () => {
     const groupRef = React.useRef(null);
     const isMobile = useMediaQuery({query: '(max-width: 1024px)'});
     const {setTexture} = useMacBookStore();
 
-    //pre load all the feature videos during component mount
+    //pre-load all the feature videos during component mount
     useEffect(() => {
-        featureSequence.forEach((feature) => {
+        featureSequence.forEach((features) => {
             const v = document.createElement('video');
 
             Object.assign(v, {
@@ -106,7 +106,7 @@ const Features = () => {
             <Canvas id='f-canvas' camera={{}}>
                 <StudioLights/>
                 <ambientLight intensity={0.5}/>
-                <ModelScrool/>
+                <ModelScroll/>
             </Canvas>
 
             <div className='absolute inset-0'>
