@@ -109,10 +109,10 @@ If you’d like to enhance animations, 3D scenes, or performance — feel free t
 
 ```bash
 # Clone this repository
-git clone https://github.com/yourusername/apple-3d-website.git
+git clone https://github.com/Subhransu9889/AppleMacBook
 
 # Navigate into the project folder
-cd apple-3d-website
+cd macbook
 
 # Install dependencies
 npm install
